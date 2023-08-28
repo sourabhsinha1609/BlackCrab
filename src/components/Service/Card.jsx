@@ -26,7 +26,7 @@ const Container = styled.div`
     }
     
     h1{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         padding-bottom: 1rem;
     }
 

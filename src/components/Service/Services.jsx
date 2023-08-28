@@ -37,19 +37,19 @@ const services = [
     icon: AiOutlineCloudServer,
     title: "Cloud Services",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "up"
+    dir: "left"
   },
   {
     icon: FaChalkboardTeacher,
     title: "Training and Workshops",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "up"
+    dir: "left"
   },
   {
     icon: GiArchiveResearch,
     title: "Research and Development",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "up"
+    dir: "left"
   }
 ];
 
