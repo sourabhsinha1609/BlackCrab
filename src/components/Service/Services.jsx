@@ -1,24 +1,56 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { MdPrecisionManufacturing, MdAndroid, MdSecurity } from "react-icons/md";
+import { FiDatabase } from "react-icons/fi";
+import { GiArchiveResearch } from "react-icons/gi";
+import { AiOutlineCloudServer } from "react-icons/ai";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 
 const services = [
   {
-    icon: MdDesignServices,
-    title: "ui/ux designer",
+    icon: MdAndroid,
+    title: "AI Solutions",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     dir: "left"
   },
   {
-    icon: FiCodesandbox,
-    title: "graphic designer",
+    icon: MdSecurity,
+    title: "Cyber Security",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "left"
+  },
+  {
+    icon: FiDatabase,
+    title: "Database Management",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     dir: "right"
   },
+  {
+    icon: MdPrecisionManufacturing,
+    title: "Product Manufacturing",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "right"
+  },
+  {
+    icon: AiOutlineCloudServer,
+    title: "Cloud Services",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "up"
+  },
+  {
+    icon: FaChalkboardTeacher,
+    title: "Training and Workshops",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "up"
+  },
+  {
+    icon: GiArchiveResearch,
+    title: "Research and Development",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "up"
+  }
 ];
 
 const Services = () => {
