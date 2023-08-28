@@ -5,9 +5,13 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
+import ParticlesBg from "particles-bg";
+
 const ProfComponent = () => {
   return (
     <Container id="home">
+    
+    <ParticlesBg type="circle" bg={true} />
       <Slide direction="left">
         <Texts>
           <h4>
