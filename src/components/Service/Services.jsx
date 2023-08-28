@@ -6,40 +6,41 @@ import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 
+const services = [
+  {
+    icon: MdDesignServices,
+    title: "ui/ux designer",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "left"
+  },
+  {
+    icon: FiCodesandbox,
+    title: "graphic designer",
+    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    dir: "right"
+  },
+];
+
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
         <h4>
-          My <span className="green">services</span>
+          Our <span className="green">services</span>
         </h4>
-        <h1>What I Do</h1>
+        <h1>What We Offer</h1>
       </Slide>
       <Cards>
-        <Slide direction="left">
-          <Card
-            Icon={MdDesignServices}
-            title={"ui/ux designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-          />
-        </Slide>
-        <Slide direction="up">
-          <Card
-            Icon={FiCodesandbox}
-            title={"graphic designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-          />
-        </Slide>
-        <Slide direction="right">
-          <Card
-            Icon={CgWebsite}
-            title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-          />
-        </Slide>
+        {services.map(service => (
+
+          <Slide direction={service.dir}>
+            <Card
+              Icon={service.icon}
+              title={service.title}
+              disc={service.disc}
+            />
+          </Slide>
+        ))}
       </Cards>
     </Container>
   );
