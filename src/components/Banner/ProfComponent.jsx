@@ -4,14 +4,20 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
+import logo from "../assets/BLACKCRAB_PNG-06.png"
 
-import ParticlesBg from "particles-bg";
 
 const ProfComponent = () => {
   return (
     <Container id="home">
-    
-    <ParticlesBg type="circle" bg={true} />
+     <Slide direction="right">
+        <Profile>
+          <img
+            src={logo}
+            alt="profile"
+          />
+        </Profile>
+      </Slide>
       <Slide direction="left">
         <Texts>
           <h4>
@@ -47,14 +53,7 @@ const ProfComponent = () => {
           </Social>
         </Texts>
       </Slide>
-      <Slide direction="right">
-        <Profile>
-          <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
-            alt="profile"
-          />
-        </Profile>
-      </Slide>
+     
     </Container>
   );
 };
@@ -63,6 +62,9 @@ export default ProfComponent;
 
 const Container = styled.div`
   display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
   gap: 2rem;
   padding-top: 3rem;
   width: 80%;
@@ -150,9 +152,11 @@ const Social = styled.div`
   }
 `;
 const Profile = styled.div`
+background-color:white;
+border-radius:50%;
   img {
     width: 25rem;
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;
