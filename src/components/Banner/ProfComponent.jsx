@@ -5,52 +5,45 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import logo from "../assets/BLACKCRAB_PNG-06.png"
+import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
+
 
 
 const ProfComponent = () => {
+  const scrollToContent = () => {
+    // Scroll to a specific position on the page (e.g., the content section)
+    const contentElement = document.getElementById('service');
+    if (contentElement) {
+      window.scrollTo({
+        top: contentElement.offsetTop,
+        behavior: 'smooth', // Use smooth scrolling animation
+      });
+    }
+  };
   return (
     <Container id="home">
-     <Slide direction="right">
+     <Slide direction="down">
         <Profile>
           <img
             src={logo}
-            alt="profile"
+            alt="logo"
           />
         </Profile>
       </Slide>
-      <Slide direction="left">
+      <Slide direction="up">
         <Texts>
-          <h4>
-            Hello <span className="green">I'am</span>
-          </h4>
-          <h1 className="green">Milad Amiri</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
-          </p>
-          <button>Let's talk</button>
-          <Social>
-            <p>Check out my</p>
-            <div className="social-icons">
-              <span>
-                <a href="/">
-                  <AiOutlineInstagram />
-                </a>
-              </span>
-              <span>
-                <a href="/">
-                  <GiEarthAmerica />
-                </a>
-              </span>
-              <span>
-                <a href="/">
-                  <FaLinkedinIn />
-                </a>
-              </span>
-            </div>
-          </Social>
+            {/* <h4  className="center-items">
+              Welcome<span className="green" style={{marginLeft:'0.5rem'}}>To</span>
+            </h4> */}
+          <h1 className="green center-items">BLACKCRAB</h1>
+          <h3 className="center-items">Where Technology Meets Possibility</h3>
+          {/* <p>
+            We specialize in AI, Cybersecurity, Databases, Cloud Solutions, Training, Research, and Innovative Technology Products.
+          </p> */}
+          <div className="center-items" onClick={scrollToContent}>
+          <ScrollDownButton />
+          </div>
+         
         </Texts>
       </Slide>
      
@@ -87,7 +80,8 @@ const Texts = styled.div`
   }
   h1 {
     font-size: 2rem;
-    font-family: "Secular One", sans-serif;
+    ${'' /* font-family: "Secular One", sans-serif; */}
+    line-height: 4rem;
     letter-spacing: 2px;
   }
   h3 {
@@ -102,76 +96,40 @@ const Texts = styled.div`
 
   button {
     padding: 0.7rem 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     cursor: pointer;
-    background-color: #01be96;
+    background-color: #993399;
     border: none;
     color: #fff;
     font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
+    border-radius:15px;
     :hover {
-      filter: drop-shadow(0px 10px 10px #01be9570);
-    }
-  }
-`;
-const Social = styled.div`
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  p {
-    font-size: 0.9rem;
-    @media (max-width: 690px) {
-      font-size: 0.7rem;
-    }
-  }
-
-  .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    span {
-      width: 2.3rem;
-      height: 2rem;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be96;
-      position: relative;
-      transition: transform 400ms ease-in-out;
-      :hover {
-        transform: rotate(360deg);
-      }
-    }
-
-    a {
-      color: #fff;
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      filter: drop-shadow(0px 0px 10px #993399);
     }
   }
 `;
 const Profile = styled.div`
-background-color:white;
-border-radius:50%;
-  img {
-    width: 25rem;
-    
-    transition: transform 400ms ease-in-out;
-    @media (max-width: 790px) {
-      width: 20rem;
-    }
+  background-color: #C5C5C5;
+  margin-top: 8rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:  background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 
-    @media (max-width: 660px) {
-      width: 18rem;
-    }
-
-    @media (max-width: 640px) {
-      width: 100%;
-    }
+  :hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(200, 200, 200, 0.8); 
   }
 
-  :hover img {
-    transform: translateY(-10px);
+  img {
+    width: 100%; /* Image size will increase, but white profile element remains same size */
+    transition: transform 0.4s ease-in-out;
+
+    :hover {
+      transform: scale(1.3);
+    }
   }
 `;
