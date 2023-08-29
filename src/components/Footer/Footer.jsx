@@ -94,13 +94,11 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-           
-        
           </div>
         </div>
       </Profile>
     </Container>
-    <Fade>
+    <Fade >
         </Fade>
     <Copyright>
       <p>©2023 Blackcrab. All Rights Reserved | Terms and Conditions | Privacy Policy</p>
