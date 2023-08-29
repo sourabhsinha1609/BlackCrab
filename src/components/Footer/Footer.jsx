@@ -204,7 +204,7 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: orange;
+          background-color: ;
         }
 
         a {
