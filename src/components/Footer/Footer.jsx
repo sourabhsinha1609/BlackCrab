@@ -15,7 +15,6 @@ const Footer = () => {
     <Container id="footer">
       
       <Form>
-        <Slide direction="right">
           <form>
             <div className="name">
               <span>
@@ -37,41 +36,34 @@ const Footer = () => {
             </div>
             <Button>Submit</Button>
           </form>
-          
-        </Slide>
       </Form>
 
       <Profile>
-        <Slide direction="left" delay={1}>
+       
           <h1>Get in Touch</h1>
-        </Slide>
+        
         <div className="links">
-          <Slide direction="left">
+         
             <h1>Contact us directly:</h1>
-          </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
-            <Slide direction="left">
+           
               <a href="tel:+916207448507">+91 620 744 8507</a>
-            </Slide>
+           
           </div>
           <div>
-            <Slide direction="left">
+           
               <span>
                 <HiOutlineMailOpen />
               </span>
-            </Slide>
-            <Slide>
+          
               <a href="mailto:connect@blackcrabit.com">connect@blackcrabit.com</a>
-            </Slide>
           </div>
         </div>
         <div className="profiles">
-          <Slide direction="left">
             <h1>Visit our profiles</h1>
-          </Slide>
           <div className="icons">
             <Zoom>
               <span>
