@@ -20,23 +20,22 @@ const Hero = () => {
           <MainHeading>Research And Development</MainHeading>
         </Slide>
         <HeroText>
-          In the rapidly evolving landscape of the digital age, where
-          interconnectedness and technological advancements are becoming
-          increasingly prevalent, the security of digital assets has emerged as
-          a critical concern for individuals, businesses, and organizations
-          alike. This is where cutting-edge solutions play a pivotal role,
-          offering a comprehensive and sophisticated approach to safeguarding
-          valuable digital assets against the myriad of threats that can arise
-          in this interconnected world.
+          At the forefront of technological advancement, we proudly stand as
+          pioneers in the realm of tech research, propelling innovation through
+          a relentless pursuit of exploration and experimentation. Our
+          commitment to pushing boundaries drives us to embark on groundbreaking
+          journeys into uncharted territories, seeking new insights and
+          possibilities. Through rigorous experimentation, we unravel the
+          intricacies of emerging technologies, dissecting their potential
+          applications and implications.
         </HeroText>
         <VideoContainer>
-          <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
+          <VideoIframe src="https://www.youtube.com/embed/gejmtrdeE4M" />
         </VideoContainer>
         <ButtonWrapper>
           <Button>Find Jobs</Button>
           <Button>Resources</Button>
         </ButtonWrapper>
-
       </Container>
     </HeroSection>
   );
