@@ -86,13 +86,11 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-           
-        
           </div>
         </div>
       </Profile>
     </Container>
-    <Fade>
+    <Fade >
         </Fade>
     <Copyright>
       <p>©2023 Blackcrab. All Rights Reserved | Terms and Conditions | Privacy Policy</p>
@@ -124,8 +122,6 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  
-
   .address {
     padding: 1rem 0;
     h1 {
@@ -133,7 +129,7 @@ const Profile = styled.div`
 
     }
 
-    
+  
 
     p {
       width: 60%;
@@ -159,7 +155,7 @@ const Profile = styled.div`
         text-decoration: none;
         color: lightgray;
         :hover {
-          color: orange;
+          color: #993399;
         }
       }
     }
@@ -188,12 +184,14 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: orange;
+          background-color: #993399;
+          
         }
 
         a {
           margin-top: 0.2rem;
           color: #fff;
+          font-size: 1.6rem;
         }
       }
     }
@@ -211,7 +209,7 @@ const Form = styled.div`
   }
 
   form {
-    background-color: #191923;
+    background-color: #0c0c0c;
     padding: 0.8rem;
     border-radius: 5px;
     .name,
@@ -242,17 +240,7 @@ const Form = styled.div`
       }
     }
 
-    button {
-      width: 5rem;
-      height: 1.8rem;
-      background-color: #01be96;
-      border: none;
-      border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
-      cursor: pointer;
-      :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
-      }
+
     }
   }
 `;
@@ -285,7 +273,8 @@ export const Button = styled.button`
   background: none;
   white-space: nowrap;
   padding: 10px 15px;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 550;
   color: #fff;
   outline: none;
   border: 1px solid #fff;
