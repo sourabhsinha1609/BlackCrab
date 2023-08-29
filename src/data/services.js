@@ -38,7 +38,7 @@ const services = [
       "icon": MdPrecisionManufacturing,
       "title": "Product Manufacturing",
       "disc": "Our technology products are born from passion and expertise, designed to revolutionize how you interact with tech.",
-      "dir": "left",
+      "dir": "right",
       link: "/productmanufacturing",
     },
     {
