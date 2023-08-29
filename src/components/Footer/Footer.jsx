@@ -3,18 +3,13 @@ import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import {  AiFillLinkedin,AiFillInstagram, AiOutlineArrowUp } from "react-icons/ai";
+import {  AiFillLinkedin,AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 const Footer = () => {
-  const scrollUp = () => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
     <>
     <Container id="footer">
@@ -40,7 +35,7 @@ const Footer = () => {
               </span>
               <textarea cols="30" rows="10" placeholder="Message..."></textarea>
             </div>
-            <button>Submit</button>
+            <Button>Submit</Button>
           </form>
           
         </Slide>
@@ -106,9 +101,6 @@ const Footer = () => {
       </Profile>
     </Container>
     <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
         </Fade>
     <Copyright>
       <p>©2023 Blackcrab. All Rights Reserved | Terms and Conditions | Privacy Policy</p>
@@ -175,7 +167,7 @@ const Profile = styled.div`
         text-decoration: none;
         color: lightgray;
         :hover {
-          color: #993399;
+          color: orange;
         }
       }
     }
@@ -204,7 +196,7 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: #993399;
+          background-color: orange;
         }
 
         a {
@@ -215,25 +207,7 @@ const Profile = styled.div`
     }
   }
 `;
-const ArrowUp = styled.p`
-  width: 2rem;
-  height: 2rem;
-  background-color: #01be96;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 700;
-  
-  
-  
-  @media (max-width: 650px) {
-    position: absolute;
-    right: 3rem;
-    top: 16rem;
-  }
-`;
+
 const Form = styled.div`
   flex: 1;
   width: 100%;
@@ -245,7 +219,7 @@ const Form = styled.div`
   }
 
   form {
-    background-color: #0c0c0c;
+    background-color: #191923;
     padding: 0.8rem;
     border-radius: 5px;
     .name,
@@ -279,7 +253,7 @@ const Form = styled.div`
     button {
       width: 5rem;
       height: 1.8rem;
-      background-color: #993399;
+      background-color: #01be96;
       border: none;
       border-radius: 5px;
       filter: drop-shadow(0px 4px 5px #01be9551);
@@ -312,4 +286,44 @@ p {
   }
 }
   
+`;
+
+export const Button = styled.button`
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 11px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:before {
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover:before {
+    height: 500%;
+  }
+
+  &:hover {
+    transform: scale(1.05); /* Scale the container on hover */
+    transition: transform 0.5s ease; /* Transition the scaling with a slow speed */
+    box-shadow: 0 0 32px 2px #59256f; /* Apply the box shadow on hover */
+    color: black;
+  }
 `;
