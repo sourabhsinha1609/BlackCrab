@@ -2,10 +2,8 @@ import React from "react";
 import {
   HeroSection,
   HeroText,
-  ButtonWrapper,
   VideoIframe,
   VideoContainer,
-  Button,
   Container,
   MainHeading,
 } from "./HeroStyles";
@@ -34,10 +32,6 @@ const Hero = () => {
         <VideoContainer>
           <VideoIframe src="https://www.youtube.com/embed/nxpUvJxnzzw" />
         </VideoContainer>
-        <ButtonWrapper>
-          <Button>Find Jobs</Button>
-          <Button>Resources</Button>
-        </ButtonWrapper>
       </Container>
     </HeroSection>
   );
