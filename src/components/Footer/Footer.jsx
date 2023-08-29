@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import {  AiFillLinkedin,AiFillInstagram, AiOutlineArrowUp } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -17,82 +17,7 @@ const Footer = () => {
   };
   return (
     <Container id="footer">
-      <Profile>
-        <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
-        </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div>
-        <div className="links">
-          <Slide direction="left">
-            <h1>Contact me directly:</h1>
-          </Slide>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
-          </div>
-          <div>
-            <Slide direction="left">
-              <span>
-                <HiOutlineMailOpen />
-              </span>
-            </Slide>
-            <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
-            </Slide>
-          </div>
-        </div>
-        <div className="profiles">
-          <Slide direction="left">
-            <h1>Check my profiles</h1>
-          </Slide>
-          <div className="icons">
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillGithub />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillLinkedin />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
-                </a>
-              </span>
-            </Zoom>
-          </div>
-        </div>
-        <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
-        </Fade>
-      </Profile>
+      
       <Form>
         <Slide direction="right">
           <form>
@@ -116,8 +41,72 @@ const Footer = () => {
             </div>
             <button>Submit</button>
           </form>
+          
         </Slide>
       </Form>
+
+      <Profile>
+        <Slide direction="left" delay={1}>
+          <h1>Get in Touch</h1>
+        </Slide>
+        <div className="links">
+          <Slide direction="left">
+            <h1>Contact us directly:</h1>
+          </Slide>
+          <div>
+            <span>
+              <FiPhoneCall />
+            </span>
+            <Slide direction="left">
+              <a href="tel:+916207448507">+91 620 744 8507</a>
+            </Slide>
+          </div>
+          <div>
+            <Slide direction="left">
+              <span>
+                <HiOutlineMailOpen />
+              </span>
+            </Slide>
+            <Slide>
+              <a href="mailto:connect@blackcrabit.com">connect@blackcrabit.com</a>
+            </Slide>
+          </div>
+        </div>
+        <div className="profiles">
+          <Slide direction="left">
+            <h1>Visit our profiles</h1>
+          </Slide>
+          <div className="icons">
+            <Zoom>
+              <span>
+                <a href="/">
+                  <AiFillInstagram />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="/">
+                  <AiFillLinkedin />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="/">
+                  <BsFacebook />
+                </a>
+              </span>
+            </Zoom>
+            <Fade>
+          <ArrowUp onClick={scrollUp}>
+            <AiOutlineArrowUp />
+          </ArrowUp>
+        </Fade>
+        
+          </div>
+        </div>
+      </Profile>
     </Container>
   );
 };
@@ -132,13 +121,14 @@ const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
+  gap: 15rem;
   justify-content: space-between;
   @media (max-width: 840px) {
     width: 90%;
   }
 
   @media (max-width: 650px) {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Switched to column-reverse */
     gap: 3rem;
   }
 `;
@@ -148,7 +138,10 @@ const Profile = styled.div`
     padding: 1rem 0;
     h1 {
       font-size: 1.2rem;
+
     }
+
+    
 
     p {
       width: 60%;
@@ -230,6 +223,7 @@ const ArrowUp = styled.div`
 `;
 const Form = styled.div`
   flex: 1;
+  
   h1 {
     font-size: 1.3rem;
     padding-bottom: 0.7rem;
