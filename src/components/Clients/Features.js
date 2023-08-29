@@ -27,8 +27,11 @@ const Features = () => {
       <Container>
         <FeatureTextWrapper>
           <h1 className="green center-items" >Our Approach</h1>
+
         </FeatureTextWrapper>
+
         <FeatureWrapper>
+          
           {featuresData.map((el, index) => (
             <FeatureColumn
               style={{ color: "#fff" }}
