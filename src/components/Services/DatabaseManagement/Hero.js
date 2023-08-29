@@ -28,6 +28,7 @@ const Hero = () => {
           offering a comprehensive and sophisticated approach to safeguarding
           valuable digital assets against the myriad of threats that can arise
           in this interconnected world.
+          
         </HeroText>
         <VideoContainer>
           <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
