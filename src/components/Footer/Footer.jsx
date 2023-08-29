@@ -16,6 +16,7 @@ const Footer = () => {
     });
   };
   return (
+    <>
     <Container id="footer">
       
       <Form>
@@ -98,16 +99,21 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-            <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
-        </Fade>
+           
         
           </div>
         </div>
       </Profile>
     </Container>
+    <Fade>
+          <ArrowUp onClick={scrollUp}>
+            <AiOutlineArrowUp />
+          </ArrowUp>
+        </Fade>
+    <Copyright>
+      <p>©2023 Blackcrab. All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+    </Copyright>
+    </>
   );
 };
 
@@ -134,6 +140,8 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
+  
+
   .address {
     padding: 1rem 0;
     h1 {
@@ -155,7 +163,8 @@ const Profile = styled.div`
   .links {
     h1 {
       font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     div {
@@ -175,12 +184,14 @@ const Profile = styled.div`
   .profiles {
     h1 {
       font-size: 1.2rem;
-      padding: 1rem 0;
+      padding: 2rem 0;
     }
 
     .icons {
       display: flex;
       align-items: center;
+      
+      
 
       span {
         display: flex;
@@ -204,7 +215,7 @@ const Profile = styled.div`
     }
   }
 `;
-const ArrowUp = styled.div`
+const ArrowUp = styled.p`
   width: 2rem;
   height: 2rem;
   background-color: #01be96;
@@ -214,7 +225,9 @@ const ArrowUp = styled.div`
   cursor: pointer;
   font-size: 1.3rem;
   font-weight: 700;
-  margin-top: 2rem;
+  
+  
+  
   @media (max-width: 650px) {
     position: absolute;
     right: 3rem;
@@ -223,6 +236,8 @@ const ArrowUp = styled.div`
 `;
 const Form = styled.div`
   flex: 1;
+  width: 100%;
+
   
   h1 {
     font-size: 1.3rem;
@@ -274,4 +289,27 @@ const Form = styled.div`
       }
     }
   }
+`;
+
+const Copyright = styled.div`
+background-color: #000;
+height: 3rem;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+p {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for small screens */
+  height: 2rem;
+  p {
+    font-size: 0.6rem;
+  }
+}
+  
 `;
