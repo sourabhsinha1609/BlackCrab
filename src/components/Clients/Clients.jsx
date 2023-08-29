@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
 import { Slide } from 'react-awesome-reveal';
+import Features from './Features'
 
 let clients = [
     {
@@ -105,7 +106,7 @@ const Clients = () => {
 
     return (
         <Container id='client'>
-
+                
             {aboutUsParagraphs.map((paragraph, index) => (
                 <Slide direction="up" key={index}>
                     <AboutUs>
@@ -118,17 +119,18 @@ const Clients = () => {
                     </AboutUsPara>
                  
 
-
+                    
 
                 </Slide>
-            ))}
 
+            ))}
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
                     {clientDisc}
                 </Slider>
                
             </Testimonials>
+            <Features />
         </Container>
     )
 }
