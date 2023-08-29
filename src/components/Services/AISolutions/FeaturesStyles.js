@@ -69,10 +69,9 @@ export const FeatureColumn = styled(motion.div)`
   padding: 20px;
   margin: 2rem;
   border-radius: 20px;
-
+transition: transform 0.4s ease-in-out;
   &:hover {
     transform: scale(2); 
-    transition: transform 0.5s ease; 
     box-shadow: 0 0 32px 2px #59256f; 
   }
 `;

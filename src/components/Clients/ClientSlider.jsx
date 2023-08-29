@@ -9,7 +9,7 @@ const ClientSlider = (props) => {
         
       
         <Footer>
-            <img src={img_url} alt={name} />
+            {/* <img src={img_url} alt={name} /> */}
             <div className="details">
                 <h1>{name}</h1>
                 <p>{position}</p>

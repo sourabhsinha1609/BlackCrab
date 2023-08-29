@@ -10,24 +10,21 @@ let clients = [
         position: "web developer",
         img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
         stars: 5,
-        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        disc: `Elevating the idea of unlocking new potentials, we focus on improvising your business to get the most out of it and benefting you. `
     },
     {
         name: "Aditya Tiwary",
         position: "web developer",
         img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
         stars: 4,
-        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        disc: `Our expertise lies in amplifying your business potential, driving excellence across all facets and propelling you towards remarkable achievements.`
     },
     {
         name: "Shashank Tiwary",
         position: "web developer",
         img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
         stars: 5,
-        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        disc: `We're dedicated to optimizing the pathways of your business journey, paving the way for efficient processes, enriched experiences, and exceptional outcomes. `
     },
    
 ]
