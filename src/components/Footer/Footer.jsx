@@ -130,8 +130,6 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  
-
   .address {
     padding: 1rem 0;
     h1 {
@@ -139,7 +137,7 @@ const Profile = styled.div`
 
     }
 
-    
+  
 
     p {
       width: 60%;
