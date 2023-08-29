@@ -30,7 +30,7 @@ const Header = () => {
       )}
       <NavLinks>
         <a href='#home'>Home</a>
-        <a href='#project'>Our Services</a>
+        <a href='#service'>Our Services</a>
         <a href='#client'>About Us</a>
         <a href='#footer'>Contact Us</a>
       </NavLinks>
@@ -82,8 +82,8 @@ const NavLinks = styled.div`
   a {
     color: #fff;
     text-decoration: none;
-    font-weight: 400;
     transition: opacity 0.3s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
     :hover {
       opacity: 0.7;
     }

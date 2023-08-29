@@ -1,9 +1,17 @@
 import styled from "styled-components";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Cybersecurity from "./pages/Cybersecurity";
+import Cybersecurity from "./pages/Services/Cybersecurity";
+import AISolutions from "./pages/Services/AISolutions";
+import CloudServices from "./pages/Services/CloudServices";
+import DatabaseManagement from "./pages/Services/DatabaseManagement";
+import ProductManufacturing from "./pages/Services/ProductManufacturing";
+import RND from "./pages/Services/RND";
+import TrainingAndWorkshops from "./pages/Services/TrainingAndWorkshops";
+import MachineLearning from "./pages/Services/MachineLearning";
+
 import Home from "./pages/Home";
-import Header from "../src/components/Banner/Header"
+import Header from "../src/components/Banner/Header";
 import Footer from "./components/Footer/Footer";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
@@ -100,6 +108,15 @@ function App() {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/cybersecurity" Component={Cybersecurity} />
+          <Route path="/aisolutions" Component={AISolutions} />
+          <Route path="/cloudservices" Component={CloudServices} />
+          <Route path="/databasemanagement" Component={DatabaseManagement} />
+          <Route path="/productmanufacturing" Component={ProductManufacturing} />
+          <Route path="/researchanddevelopment" Component={RND} />
+          <Route path="/trainingandworkshops" Component={TrainingAndWorkshops} />
+          <Route path="/machinelearning" Component={MachineLearning} />
+
+
         </Routes>
       </Router>
       <LightColor>

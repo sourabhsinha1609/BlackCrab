@@ -5,12 +5,24 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import logo from "../assets/BLACKCRAB_PNG-06.png"
+import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
+
 
 
 const ProfComponent = () => {
+  const scrollToContent = () => {
+    // Scroll to a specific position on the page (e.g., the content section)
+    const contentElement = document.getElementById('service');
+    if (contentElement) {
+      window.scrollTo({
+        top: contentElement.offsetTop,
+        behavior: 'smooth', // Use smooth scrolling animation
+      });
+    }
+  };
   return (
     <Container id="home">
-     <Slide direction="right">
+     <Slide direction="down">
         <Profile>
           <img
             src={logo}
@@ -18,18 +30,18 @@ const ProfComponent = () => {
           />
         </Profile>
       </Slide>
-      <Slide direction="left">
+      <Slide direction="up">
         <Texts>
-          <h4  className="center-items">
-            Welcome<span className="green" style={{marginLeft:'0.5rem'}}>To</span>
-          </h4>
+            {/* <h4  className="center-items">
+              Welcome<span className="green" style={{marginLeft:'0.5rem'}}>To</span>
+            </h4> */}
           <h1 className="green center-items">BLACKCRAB</h1>
           <h3 className="center-items">Where Technology Meets Possibility</h3>
-          <p>
+          {/* <p>
             We specialize in AI, Cybersecurity, Databases, Cloud Solutions, Training, Research, and Innovative Technology Products.
-          </p>
-          <div className="center-items">
-          <button>Join Us</button>
+          </p> */}
+          <div className="center-items" onClick={scrollToContent}>
+          <ScrollDownButton />
           </div>
          
         </Texts>
@@ -68,7 +80,8 @@ const Texts = styled.div`
   }
   h1 {
     font-size: 2rem;
-    font-family: "Secular One", sans-serif;
+    ${'' /* font-family: "Secular One", sans-serif; */}
+    line-height: 4rem;
     letter-spacing: 2px;
   }
   h3 {
@@ -97,7 +110,7 @@ const Texts = styled.div`
 `;
 const Profile = styled.div`
   background-color: #C5C5C5;
-  margin-top: 2rem;
+  margin-top: 8rem;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
