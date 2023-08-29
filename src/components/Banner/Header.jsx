@@ -82,8 +82,8 @@ const NavLinks = styled.div`
   a {
     color: #fff;
     text-decoration: none;
-    font-weight: 400;
     transition: opacity 0.3s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
     :hover {
       opacity: 0.7;
     }

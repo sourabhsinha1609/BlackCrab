@@ -32,6 +32,6 @@ const Container = styled.div`
 
     p{
         font-size: 0.95rem;
-        text-align: justify;
+        text-align: center;
     }
 `

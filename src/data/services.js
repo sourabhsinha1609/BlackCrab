@@ -8,44 +8,44 @@ const services = [
     {
       "icon": MdAndroid,
       "title": "AI Solutions",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+      "disc": "We leverage AI, including machine and deep learning, to convert data to valuable insights, enhancing business operations.",
       "dir": "left"
     },
     {
       "icon": MdSecurity,
       "title": "Cyber Security",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+      "disc": "Our cutting-edge solutions ensure your digital assets are protected, guarding against threats in an increasingly connected world.",
       "dir": "left"
     },
     {
       "icon": FiDatabase,
       "title": "Database Management",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      "dir": "right"
+      "disc": "We create and manage scalable databases, ensuring your data is accessible, secure, and well-organized.",
+      "dir": "left"
     },
     {
       "icon": MdPrecisionManufacturing,
       "title": "Product Manufacturing",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      "dir": "right"
+      "disc": "Our technology products are born from passion and expertise, designed to revolutionize how you interact with tech.",
+      "dir": "left"
     },
     {
       "icon": AiOutlineCloudServer,
       "title": "Cloud Services",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      "dir": "left"
+      "disc": "Embrace the flexibility and scalability of the cloud with our tailored solutions that drive efficiency and innovation.",
+      "dir": "right"
     },
     {
       "icon": FaChalkboardTeacher,
       "title": "Training and Workshops",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      "dir": "left"
+      "disc": "Enhance team skills through our empowering training programs, delivering up-to-date tech knowledge.",
+      "dir": "right"
     },
     {
       "icon": GiArchiveResearch,
       "title": "Research and Development",
-      "disc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      "dir": "left"
+      "disc": "We're pioneers in tech research, driving innovation through exploration and experimentation.",
+      "dir": "right"
     }
   ];
 
