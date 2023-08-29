@@ -35,7 +35,7 @@ const Footer = () => {
               </span>
               <textarea cols="30" rows="10" placeholder="Message..."></textarea>
             </div>
-            <button>Submit</button>
+            <Button>Submit</Button>
           </form>
           
         </Slide>
@@ -286,4 +286,44 @@ p {
   }
 }
   
+`;
+
+export const Button = styled.button`
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 11px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:before {
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover:before {
+    height: 500%;
+  }
+
+  &:hover {
+    transform: scale(1.05); /* Scale the container on hover */
+    transition: transform 0.5s ease; /* Transition the scaling with a slow speed */
+    box-shadow: 0 0 32px 2px #59256f; /* Apply the box shadow on hover */
+    color: black;
+  }
 `;
