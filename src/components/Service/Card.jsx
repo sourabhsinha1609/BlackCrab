@@ -34,4 +34,10 @@ const Container = styled.div`
         font-size: 0.95rem;
         text-align: center;
     }
+    transition:transform 0.4s ease-in-out,background-color 0.4s ease-in-out,box-shadow 0.4s ease-in-out;
+    &:hover{
+      transform : scale(1.05);
+      background-color: #1a1a1a;
+      box-shadow: 0px 0px 200px rgba(153, 51, 153, 0.6); 
+    }
 `

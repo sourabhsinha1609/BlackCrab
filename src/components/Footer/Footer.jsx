@@ -3,24 +3,18 @@ import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import {  AiFillLinkedin,AiFillInstagram, AiOutlineArrowUp } from "react-icons/ai";
+import {  AiFillLinkedin,AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 const Footer = () => {
-  const scrollUp = () => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
     <>
     <Container id="footer">
       
       <Form>
-        <Slide direction="right">
           <form>
             <div className="name">
               <span>
@@ -42,41 +36,34 @@ const Footer = () => {
             </div>
             <Button>Submit</Button>
           </form>
-          
-        </Slide>
       </Form>
 
       <Profile>
-        <Slide direction="left" delay={1}>
+       
           <h1>Get in Touch</h1>
-        </Slide>
+        
         <div className="links">
-          <Slide direction="left">
+         
             <h1>Contact us directly:</h1>
-          </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
-            <Slide direction="left">
+           
               <a href="tel:+916207448507">+91 620 744 8507</a>
-            </Slide>
+           
           </div>
           <div>
-            <Slide direction="left">
+           
               <span>
                 <HiOutlineMailOpen />
               </span>
-            </Slide>
-            <Slide>
+          
               <a href="mailto:connect@blackcrabit.com">connect@blackcrabit.com</a>
-            </Slide>
           </div>
         </div>
         <div className="profiles">
-          <Slide direction="left">
             <h1>Visit our profiles</h1>
-          </Slide>
           <div className="icons">
             <Zoom>
               <span>
@@ -99,16 +86,11 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-           
-        
           </div>
         </div>
       </Profile>
     </Container>
-    <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
+    <Fade >
         </Fade>
     <Copyright>
       <p>©2023 Blackcrab. All Rights Reserved | Terms and Conditions | Privacy Policy</p>
@@ -122,13 +104,11 @@ export default Footer;
 const Container = styled.div`
   margin-top: 2rem;
   position: relative;
-  padding: 2rem 0;
   width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin:auto;
+  margin-bottom:2rem;
   display: flex;
-  gap: 15rem;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -140,8 +120,11 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  
-
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  margin:auto;
   .address {
     padding: 1rem 0;
     h1 {
@@ -149,7 +132,7 @@ const Profile = styled.div`
 
     }
 
-    
+  
 
     p {
       width: 60%;
@@ -175,7 +158,7 @@ const Profile = styled.div`
         text-decoration: none;
         color: lightgray;
         :hover {
-          color: #993399;
+            color: #993399;
         }
       }
     }
@@ -204,36 +187,20 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: #993399;
+          box-shadow: 0px 0px 10px 10px rgba(153, 51, 153, 0.8); 
+          
         }
 
         a {
           margin-top: 0.2rem;
           color: #fff;
+          font-size: 1.6rem;
         }
       }
     }
   }
 `;
-const ArrowUp = styled.p`
-  width: 2rem;
-  height: 2rem;
-  background-color: #01be96;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 700;
-  
-  
-  
-  @media (max-width: 650px) {
-    position: absolute;
-    right: 3rem;
-    top: 16rem;
-  }
-`;
+
 const Form = styled.div`
   flex: 1;
   width: 100%;
@@ -276,17 +243,7 @@ const Form = styled.div`
       }
     }
 
-    button {
-      width: 5rem;
-      height: 1.8rem;
-      background-color: #993399;
-      border: none;
-      border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
-      cursor: pointer;
-      :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
-      }
+
     }
   }
 `;
@@ -319,7 +276,8 @@ export const Button = styled.button`
   background: none;
   white-space: nowrap;
   padding: 10px 15px;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 550;
   color: #fff;
   outline: none;
   border: 1px solid #fff;

@@ -2,12 +2,13 @@ import ProfComponent from "../components/Banner/ProfComponent";
 import Clients from "../components/Clients/Clients";
 import Projects from "../components/Projects/Projects";
 import Services from "../components/Service/Services";
-
+import Header from "../components/Banner/Header";
 import styled from "styled-components";
 
 const Home = () => {
   return (
     <>
+    <Header />
       <Banner>
         <ProfComponent />
       </Banner>
