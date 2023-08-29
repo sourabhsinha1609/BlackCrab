@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 
-const Header = () => {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,16 +29,14 @@ const Header = () => {
         </Logo>
       )}
       <NavLinks>
-        <a href='#home'>Home</a>
-        <a href='#service'>Our Services</a>
-        <a href='#client'>About Us</a>
+        <a href='/'>Home</a>
         <a href='#footer'>Contact Us</a>
       </NavLinks>
     </Nav>
   );
 };
 
-export default Header;
+export default Navbar;
 
 const Nav = styled.nav`
   position: fixed;

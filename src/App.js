@@ -11,7 +11,6 @@ import TrainingAndWorkshops from "./pages/Services/TrainingAndWorkshops";
 import MachineLearning from "./pages/Services/MachineLearning";
 
 import Home from "./pages/Home";
-import Header from "../src/components/Banner/Header";
 import Footer from "./components/Footer/Footer";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
@@ -103,7 +102,7 @@ function App() {
           detectRetina: true,
         }}
       />
-      <Header />
+      
       <Router>
         <Routes>
           <Route path="/" Component={Home} />

@@ -107,7 +107,7 @@ const Clients = () => {
         <Container id='client'>
 
             {aboutUsParagraphs.map((paragraph, index) => (
-                <Slide direction="left" key={index}>
+                <Slide direction="up" key={index}>
                     <AboutUs>
                         <h1 className="green">{paragraph.title}</h1>
 
@@ -196,7 +196,6 @@ const AboutUsPara = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    margin-top:3rem;
     margin-bottom:3rem;
     font-weight: 500;
     font-family: "Secular One", sans-serif;
@@ -210,6 +209,7 @@ const AboutUs = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top:auto;
+    margin-bottom:2rem;
 `
 
 const Testimonials = styled.div`
