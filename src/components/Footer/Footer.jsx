@@ -175,7 +175,7 @@ const Profile = styled.div`
         text-decoration: none;
         color: lightgray;
         :hover {
-          color: orange;
+          color: #993399;
         }
       }
     }
@@ -204,7 +204,7 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: orange;
+          background-color: #993399;
         }
 
         a {
@@ -245,7 +245,7 @@ const Form = styled.div`
   }
 
   form {
-    background-color: #191923;
+    background-color: #0c0c0c;
     padding: 0.8rem;
     border-radius: 5px;
     .name,
@@ -275,6 +275,18 @@ const Form = styled.div`
         padding-top: 0.5rem;
       }
     }
+
+    button {
+      width: 5rem;
+      height: 1.8rem;
+      background-color: #993399;
+      border: none;
+      border-radius: 5px;
+      filter: drop-shadow(0px 4px 5px #01be9551);
+      cursor: pointer;
+      :hover {
+        filter: drop-shadow(0px 6px 9px #01be9551);
+      }
     }
   }
 `;
