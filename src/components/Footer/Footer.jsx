@@ -104,13 +104,11 @@ export default Footer;
 const Container = styled.div`
   margin-top: 2rem;
   position: relative;
-  padding: 2rem 0;
   width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin:auto;
+  margin-bottom:2rem;
   display: flex;
-  gap: 15rem;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -122,6 +120,11 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  margin:auto;
   .address {
     padding: 1rem 0;
     h1 {
@@ -155,7 +158,7 @@ const Profile = styled.div`
         text-decoration: none;
         color: lightgray;
         :hover {
-          color: #993399;
+            color: #993399;
         }
       }
     }
@@ -184,7 +187,7 @@ const Profile = styled.div`
         border-radius: 50px;
 
         :hover {
-          background-color: #993399;
+          box-shadow: 0px 0px 10px 10px rgba(153, 51, 153, 0.8); 
           
         }
 
