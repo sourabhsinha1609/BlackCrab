@@ -2,43 +2,67 @@ import React, { useRef } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from 'react-awesome-reveal';
 
 let clients = [
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        name: "Akshat Arsh",
+        position: "web developer",
+        img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        stars: 5,
+        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        name: "Aditya Tiwary",
+        position: "web developer",
+        img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        stars: 4,
+        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        name: "Shashank Tiwary",
+        position: "web developer",
+        img_url: "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        stars: 5,
+        disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
     },
-    {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
-    },
+   
 ]
+
+
+const aboutUsParagraphs = [
+    {
+        title: "About Us",
+        content: (
+            <>
+                Welcome to Blackcrab, where innovation knows no limits. Our journey in the realm of information technology began with a simple yet powerful motto: "Make It Possible." As a newly founded IT company, we're on a mission to turn this motto into a reality for businesses worldwide.
+
+                At Blackcrab, we're not just about technology – we're about the endless possibilities it brings. Our team of tech enthusiasts and visionaries is dedicated to crafting solutions that transcend limitations and propel businesses towards their aspirations. From [mention key areas of expertise], we're here to transform challenges into opportunities.
+
+                Our commitment to "Make It Possible" means that we thrive on pushing boundaries and embracing the unknown. With a finger on the pulse of the latest tech trends, we offer bespoke solutions that cater to your unique needs and aspirations. Let us be your partner in harnessing the power of technology to reshape industries, redefine standards, and drive success.
+
+                Join us at Blackcrab as we embark on a journey of discovery, innovation, and limitless potential. Together, we'll make the impossible possible.
+
+            </>
+        ),
+
+        
+    },
+    // You can add more paragraph objects here...
+    {
+        title: "Founded by a trio of partners:",
+        content: (
+            <>
+              
+            </>
+        ),
+
+        
+    },
+];
 var settings = {
     dots: true,
     infinite: true,
@@ -46,67 +70,77 @@ var settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows : false,
+    arrows: false,
     responsive: [
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+        {
+            breakpoint: 990,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 530,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]}
+    ]
+}
 
 const Clients = () => {
     const arrowRef = useRef(null);
     let clientDisc = "";
     clientDisc = clients.map((item, i) => (
-        <ClientSlider item={item} key={i}/>
+        <ClientSlider item={item} key={i} />
     ))
-  return (
-    <Container id='client'>
-        <Slide direction="left">
-            <span className="green">testimonials</span>
-            <h1>what clients say</h1>
-        </Slide>
-        <Testimonials>
-            <Slider ref={arrowRef} {...settings}>
-                {clientDisc}
-            </Slider>
-            <Buttons>
-                <button
-                onClick={() => arrowRef.current.slickPrev()}
-                ><IoIosArrowBack/></button>
-                <button
-                onClick={() => arrowRef.current.slickNext()}
-                ><IoIosArrowForward/></button>
-            </Buttons>
-        </Testimonials>
-    </Container>
-  )
+
+    return (
+        <Container id='client'>
+
+            {aboutUsParagraphs.map((paragraph, index) => (
+                <Slide direction="left" key={index}>
+                    <AboutUs>
+                        <h1 className="green">{paragraph.title}</h1>
+
+                    </AboutUs>
+
+                    <AboutUsPara>
+                        <p>{paragraph.content}</p>
+                    </AboutUsPara>
+                 
+
+
+
+                </Slide>
+            ))}
+
+            <Testimonials>
+                <Slider ref={arrowRef} {...settings}>
+                    {clientDisc}
+                </Slider>
+               
+            </Testimonials>
+        </Container>
+    )
 }
 
 export default Clients
 
 const Container = styled.div`
     width: 80%;
+    height: 100%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 4rem 0;
@@ -130,7 +164,7 @@ const Container = styled.div`
     }
 
     .slick-dots{
-        text-align: left;
+        text-align: center;
         margin-left: 1rem;
     }
 
@@ -156,27 +190,37 @@ const Container = styled.div`
     .slick-dots li{
         margin: 0;
     }
+
+    
+
+`
+const AboutUsPara = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    font-weight: 500;
+    font-family: "Secular One", sans-serif;
+    letter-spacing: 2px;
+    line-height: 2;
+`
+
+
+const AboutUs = styled.div`
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:auto;
 `
 
 const Testimonials = styled.div`
-    margin-top: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
     position: relative;
 `
-const Buttons = styled.div`
-    position: absolute;
-    right: 0.7rem;
-    bottom: -2rem;
 
-    button{
-        background-color: transparent;
-        margin-left: 0.5rem;
-        border: none;
-        color: #01be96;
-        cursor: pointer;
-        font-size: 1.1rem;
-    }
 
-    @media(max-width:530px){
-        display: none;
-    }
-`
+
+

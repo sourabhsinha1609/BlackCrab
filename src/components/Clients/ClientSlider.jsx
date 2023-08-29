@@ -1,25 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import {IoIosQuote} from "react-icons/io";
-import {AiOutlineStar} from "react-icons/ai";
+
 
 const ClientSlider = (props) => {
-    const {name, position, img_url, stars, disc} = props.item;
+    const {name, position, img_url, disc} = props.item;
   return (
     <Container>
-        <Header>
-            <span className='quote'><IoIosQuote/></span>
-            <div>
-                {Array(stars).fill().map((_, i) => (
-                    <span className='star' key={i}>
-                        <AiOutlineStar/>
-                    </span>
-                ))}
-            </div>
-        </Header>
-        <Body>
-            {disc}
-        </Body>
+        
+      
         <Footer>
             <img src={img_url} alt={name} />
             <div className="details">
@@ -27,6 +15,9 @@ const ClientSlider = (props) => {
                 <p>{position}</p>
             </div>
         </Footer>
+        <Body>
+            {disc}
+        </Body>
     </Container>
   )
 }
@@ -39,24 +30,10 @@ const Container = styled.div`
     margin: 0 1rem;
 `
 
-const Header = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .quote{
-        font-size: 3rem;
-        color: #01be96;
-        opacity: 0.7;
-    }
 
-    .star{
-        color: #ffcd3c;
-        font-size: 1.3rem;
-    }
-`
 const Body = styled.p`
     font-size: 0.8rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 `
 const Footer = styled.div`
     display: flex;
