@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cybersecurity from "./pages/Cybersecurity";
 import Home from "./pages/Home";
-import Header from "../components/Banner/Header";
+import Header from "../src/components/Banner/Header"
 import Footer from "./components/Footer/Footer";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
