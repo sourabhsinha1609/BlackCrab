@@ -31,7 +31,7 @@ export const MainHeading = styled.h1`
 
 export const HeroText = styled.p`
   margin-bottom: 35px;
-  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 30px;
   text-align: center;
   letter-spacing: 2px;

@@ -17,7 +17,7 @@ const Hero = () => {
     <Navbar />
       <Container>
         <Slide direction="left" delay={1}>
-          <MainHeading>AI Solutions</MainHeading>
+          <MainHeading >AI Solutions</MainHeading>
         </Slide>
         <HeroText>
           The journey from machine learning to deep learning encapsulates a
