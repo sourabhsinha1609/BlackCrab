@@ -7,49 +7,56 @@ import { AiOutlineCloudServer } from "react-icons/ai";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: MdAndroid,
     title: "AI Solutions",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left"
+    dir: "left",
+    link: "/aisolutions"
   },
   {
     icon: MdSecurity,
     title: "Cyber Security",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left"
+    dir: "left",
+    link: "/cybersecurity"
   },
   {
     icon: FiDatabase,
     title: "Database Management",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "right"
+    link: "/databasemanagement",
   },
   {
     icon: MdPrecisionManufacturing,
     title: "Product Manufacturing",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "right"
+    dir: "right",
+    link: "/productmanufacturing",
   },
   {
     icon: AiOutlineCloudServer,
     title: "Cloud Services",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left"
+    dir: "left",
+    link: "/cloudservices",
   },
   {
     icon: FaChalkboardTeacher,
     title: "Training and Workshops",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left"
+    dir: "left",
+    link: "/trainingandworkshops",
   },
   {
     icon: GiArchiveResearch,
     title: "Research and Development",
     disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left"
+    dir: "left",
+    link: "/researchanddevelopment",
   }
 ];
 
@@ -64,13 +71,14 @@ const Services = () => {
       </Slide>
       <Cards>
         {services.map(service => (
-
           <Slide direction={service.dir}>
+            <a href={service.link}>
             <Card
               Icon={service.icon}
               title={service.title}
               disc={service.disc}
             />
+            </a>
           </Slide>
         ))}
       </Cards>
