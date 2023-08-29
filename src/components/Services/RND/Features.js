@@ -10,7 +10,7 @@ import {
   Container,
   Section,
 } from "./FeaturesStyles";
-import { featuresData } from "../../../Data/FeaturesData";
+import { featuresData } from "../../../data/FeaturesData";
 
 const Features = () => {
   const initial = {

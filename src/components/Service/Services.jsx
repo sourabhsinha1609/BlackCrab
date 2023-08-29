@@ -5,56 +5,6 @@ import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
-const services = [
-  {
-    icon: MdAndroid,
-    title: "AI Solutions",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left",
-    link: "/aisolutions"
-  },
-  {
-    icon: MdSecurity,
-    title: "Cyber Security",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left",
-    link: "/cybersecurity"
-  },
-  {
-    icon: FiDatabase,
-    title: "Database Management",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    link: "/databasemanagement",
-  },
-  {
-    icon: MdPrecisionManufacturing,
-    title: "Product Manufacturing",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "right",
-    link: "/productmanufacturing",
-  },
-  {
-    icon: AiOutlineCloudServer,
-    title: "Cloud Services",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left",
-    link: "/cloudservices",
-  },
-  {
-    icon: FaChalkboardTeacher,
-    title: "Training and Workshops",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left",
-    link: "/trainingandworkshops",
-  },
-  {
-    icon: GiArchiveResearch,
-    title: "Research and Development",
-    disc: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    dir: "left",
-    link: "/researchanddevelopment",
-  }
-];
 
 const Services = () => {
   return (

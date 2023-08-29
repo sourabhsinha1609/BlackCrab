@@ -111,7 +111,7 @@ function App() {
           <Route path="/cloudservices" Component={CloudServices} />
           <Route path="/databasemanagement" Component={DatabaseManagement} />
           <Route path="/productmanufacturing" Component={ProductManufacturing} />
-          <Route path="/rnd" Component={RND} />
+          <Route path="/researchanddevelopment" Component={RND} />
           <Route path="/trainingandworkshops" Component={TrainingAndWorkshops} />
 
 

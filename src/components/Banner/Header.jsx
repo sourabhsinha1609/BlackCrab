@@ -30,7 +30,7 @@ const Header = () => {
       )}
       <NavLinks>
         <a href='#home'>Home</a>
-        <a href='#project'>Our Services</a>
+        <a href='#service'>Our Services</a>
         <a href='#client'>About Us</a>
         <a href='#footer'>Contact Us</a>
       </NavLinks>
