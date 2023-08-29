@@ -58,7 +58,7 @@ const services = [
     {
       "icon": GiArchiveResearch,
       "title": "Research and Development",
-      "disc": "We're pioneers in tech research, driving innovation through exploration and experimentation.",
+      "disc": "We're pioneers in tech research, driving innovation through exploration and experimentation with proper structure.",
       "dir": "right",
       link: "/researchanddevelopment",
     }

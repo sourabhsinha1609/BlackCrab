@@ -2,10 +2,8 @@ import React from "react";
 import {
   HeroSection,
   HeroText,
-  ButtonWrapper,
   VideoIframe,
   VideoContainer,
-  Button,
   Container,
   MainHeading,
 } from "./HeroStyles";
@@ -22,23 +20,20 @@ const Hero = () => {
           <MainHeading>Training And Workshops</MainHeading>
         </Slide>
         <HeroText>
-          In the rapidly evolving landscape of the digital age, where
-          interconnectedness and technological advancements are becoming
-          increasingly prevalent, the security of digital assets has emerged as
-          a critical concern for individuals, businesses, and organizations
-          alike. This is where cutting-edge solutions play a pivotal role,
-          offering a comprehensive and sophisticated approach to safeguarding
-          valuable digital assets against the myriad of threats that can arise
-          in this interconnected world.
+          Elevate your team's capabilities through our all-encompassing training
+          programs meticulously curated to equip individuals with cutting-edge
+          technological knowledge. Crafted with precision, our programs are
+          designed to empower participants with the latest industry insights,
+          trends, and skill sets. By immersing learners in a dynamic learning
+          environment, we facilitate the acquisition of expertise that is
+          directly applicable to real-world scenarios. From honing technical
+          proficiencies to fostering a deep understanding of emerging
+          technologies, our training initiatives provide a transformative
+          experience that enables your team to stay ahead of the curve.
         </HeroText>
         <VideoContainer>
-          <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
+          <VideoIframe src="https://www.youtube.com/embed/4-RZRLdBpFc" />
         </VideoContainer>
-        <ButtonWrapper>
-          <Button>Find Jobs</Button>
-          <Button>Resources</Button>
-        </ButtonWrapper>
-
       </Container>
     </HeroSection>
   );

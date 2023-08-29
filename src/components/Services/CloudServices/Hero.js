@@ -2,10 +2,8 @@ import React from "react";
 import {
   HeroSection,
   HeroText,
-  ButtonWrapper,
   VideoIframe,
   VideoContainer,
-  Button,
   Container,
   MainHeading,
 } from "./HeroStyles";
@@ -22,23 +20,19 @@ const Hero = () => {
           <MainHeading>Cloud Services</MainHeading>
         </Slide>
         <HeroText>
-          In the rapidly evolving landscape of the digital age, where
-          interconnectedness and technological advancements are becoming
-          increasingly prevalent, the security of digital assets has emerged as
-          a critical concern for individuals, businesses, and organizations
-          alike. This is where cutting-edge solutions play a pivotal role,
-          offering a comprehensive and sophisticated approach to safeguarding
-          valuable digital assets against the myriad of threats that can arise
-          in this interconnected world.
+          Embracing the dynamic potential of cloud technology, our bespoke
+          solutions are meticulously crafted to harness its inherent flexibility
+          and scalability. Through our tailored offerings, we empower businesses
+          to optimize their operations by capitalizing on the agility and
+          expansive capabilities of the cloud. By seamlessly integrating cloud
+          resources, our solutions drive enhanced efficiency across processes
+          while fostering a fertile ground for innovation. This synergy enables
+          organizations to adapt swiftly to changing demands, scale resources as
+          needed, and unlock new avenues for creative problem-solving.
         </HeroText>
         <VideoContainer>
-          <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
+          <VideoIframe src="https://www.youtube.com/embed/i9x0UO8MY0g" />
         </VideoContainer>
-        <ButtonWrapper>
-          <Button>Find Jobs</Button>
-          <Button>Resources</Button>
-        </ButtonWrapper>
-
       </Container>
     </HeroSection>
   );
