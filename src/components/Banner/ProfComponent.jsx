@@ -20,15 +20,15 @@ const ProfComponent = () => {
       </Slide>
       <Slide direction="left">
         <Texts>
-          <h4 style={{display:'flex', justifyContent:'center'}}>
+          <h4  className="center-items">
             Welcome<span className="green" style={{marginLeft:'0.5rem'}}>To</span>
           </h4>
-          <h1 className="green"style={{display:'flex', justifyContent:'center'}}>BLACKCRAB</h1>
-          <h3 style={{display:'flex', justifyContent:'center'}}>Where Technology Meets Possibility</h3>
+          <h1 className="green center-items">BLACKCRAB</h1>
+          <h3 className="center-items">Where Technology Meets Possibility</h3>
           <p>
             We specialize in AI, Cybersecurity, Databases, Cloud Solutions, Training, Research, and Innovative Technology Products.
           </p>
-          <div style={{display:'flex', justifyContent:'center'}}>
+          <div className="center-items">
           <button>Join Us</button>
           </div>
          
