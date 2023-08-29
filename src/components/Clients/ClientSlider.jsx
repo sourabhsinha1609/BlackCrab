@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const ClientSlider = (props) => {
     const {name, position, img_url, disc} = props.item;
   return (
     <Container>
-        
-      
         <Footer>
             {/* <img src={img_url} alt={name} /> */}
             <div className="details">
@@ -18,6 +15,7 @@ const ClientSlider = (props) => {
         <Body>
             {disc}
         </Body>
+        
     </Container>
   )
 }
