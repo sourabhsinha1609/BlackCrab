@@ -11,10 +11,12 @@ import {
 } from "./HeroStyles";
 
 import { Slide } from "react-awesome-reveal";
+import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   return (
     <HeroSection>
+    <Navbar />
       <Container>
         <Slide direction="left" delay={1}>
           <MainHeading>Product Manufacturing</MainHeading>
