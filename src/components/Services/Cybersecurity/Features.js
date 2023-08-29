@@ -10,7 +10,7 @@ import {
   Container,
   Section,
 } from "./FeaturesStyles";
-import { featuresData } from "../../../Data/FeaturesData";
+import { featuresData } from "../../../Data/FeaturesDataCyber";
 
 const Features = () => {
   const initial = {
@@ -26,7 +26,7 @@ const Features = () => {
     <Section smPadding="50px 10px" position="relative" inverse id="about">
       <Container>
         <FeatureTextWrapper>
-          <FeatureTitle>What It Offers</FeatureTitle>
+          <FeatureTitle>What We Offer</FeatureTitle>
         </FeatureTextWrapper>
         <FeatureWrapper>
           {featuresData.map((el, index) => (

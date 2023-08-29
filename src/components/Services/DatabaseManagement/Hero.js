@@ -20,24 +20,23 @@ const Hero = () => {
           <MainHeading>Database Management</MainHeading>
         </Slide>
         <HeroText>
-          In the rapidly evolving landscape of the digital age, where
-          interconnectedness and technological advancements are becoming
-          increasingly prevalent, the security of digital assets has emerged as
-          a critical concern for individuals, businesses, and organizations
-          alike. This is where cutting-edge solutions play a pivotal role,
-          offering a comprehensive and sophisticated approach to safeguarding
-          valuable digital assets against the myriad of threats that can arise
-          in this interconnected world.
-          
+          Our expertise lies in the conception and maintenance of scalable
+          databases, a process through which we guarantee the accessibility,
+          security, and systematic arrangement of your data. By constructing
+          databases with the ability to expand seamlessly as your data volume
+          grows, we enable efficient data retrieval and manipulation. Our
+          stringent security measures safeguard your data against unauthorized
+          access or breaches, fostering a trustworthy environment. Furthermore,
+          we meticulously organize the data within these databases, enhancing
+          searchability and enabling swift extraction of relevant information.
         </HeroText>
         <VideoContainer>
-          <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
+          <VideoIframe src="https://www.youtube.com/embed/cMUQznvYZ6w" />
         </VideoContainer>
         <ButtonWrapper>
           <Button>Find Jobs</Button>
           <Button>Resources</Button>
         </ButtonWrapper>
-
       </Container>
     </HeroSection>
   );
