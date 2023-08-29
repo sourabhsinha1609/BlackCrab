@@ -10,7 +10,7 @@ import logo from "../assets/BLACKCRAB_PNG-06.png"
 const ProfComponent = () => {
   return (
     <Container id="home">
-     <Slide direction="right">
+     <Slide direction="up">
         <Profile>
           <img
             src={logo}
@@ -18,7 +18,7 @@ const ProfComponent = () => {
           />
         </Profile>
       </Slide>
-      <Slide direction="left">
+      <Slide direction="up">
         <Texts>
           <h4  className="center-items">
             Welcome<span className="green" style={{marginLeft:'0.5rem'}}>To</span>
