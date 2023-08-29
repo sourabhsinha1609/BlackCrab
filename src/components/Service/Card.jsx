@@ -16,7 +16,7 @@ export default Card;
 
 const Container = styled.div`
     width: 100%;
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    background-color: #0c0c0c;    
     padding: 2rem;
     text-align: center;
     line-height: 1.5rem;

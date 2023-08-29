@@ -8,6 +8,7 @@ import DatabaseManagement from "./pages/Services/DatabaseManagement";
 import ProductManufacturing from "./pages/Services/ProductManufacturing";
 import RND from "./pages/Services/RND";
 import TrainingAndWorkshops from "./pages/Services/TrainingAndWorkshops";
+import MachineLearning from "./pages/Services/MachineLearning";
 
 import Home from "./pages/Home";
 import Header from "../src/components/Banner/Header";
@@ -113,6 +114,7 @@ function App() {
           <Route path="/productmanufacturing" Component={ProductManufacturing} />
           <Route path="/researchanddevelopment" Component={RND} />
           <Route path="/trainingandworkshops" Component={TrainingAndWorkshops} />
+          <Route path="/machinelearning" Component={MachineLearning} />
 
 
         </Routes>

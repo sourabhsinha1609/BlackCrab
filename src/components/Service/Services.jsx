@@ -3,8 +3,6 @@ import services from "../../Data/services";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
-
 
 const Services = () => {
   return (

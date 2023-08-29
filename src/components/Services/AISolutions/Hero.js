@@ -20,23 +20,24 @@ const Hero = () => {
           <MainHeading>AI Solutions</MainHeading>
         </Slide>
         <HeroText>
-          In the rapidly evolving landscape of the digital age, where
-          interconnectedness and technological advancements are becoming
-          increasingly prevalent, the security of digital assets has emerged as
-          a critical concern for individuals, businesses, and organizations
-          alike. This is where cutting-edge solutions play a pivotal role,
-          offering a comprehensive and sophisticated approach to safeguarding
-          valuable digital assets against the myriad of threats that can arise
-          in this interconnected world.
+          The journey from machine learning to deep learning encapsulates a
+          powerful AI-driven process that catalyzes the conversion of raw data
+          into actionable insights, resulting in the streamlined optimization of
+          business operations. Machine learning functions as a versatile tool,
+          employing algorithms to meticulously scrutinize historical data,
+          thereby discerning patterns that enable accurate predictions and
+          informed decision-making. Building upon this foundation, deep learning
+          introduces a sophisticated dimension by utilizing intricate neural
+          networks to extract nuanced patterns from diverse data formats such as
+          images, audio, and text.
         </HeroText>
         <VideoContainer>
-          <VideoIframe src="https://www.youtube.com/embed/GX_XsdNv1PY" />
+          <VideoIframe src="https://www.youtube.com/embed/nxpUvJxnzzw" />
         </VideoContainer>
         <ButtonWrapper>
           <Button>Find Jobs</Button>
           <Button>Resources</Button>
         </ButtonWrapper>
-
       </Container>
     </HeroSection>
   );

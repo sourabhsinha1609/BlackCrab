@@ -18,7 +18,7 @@ const services = [
       "title": "Machine Learning",
       "disc": " Seamlessly transform raw data into valuable insights, enabling informed decision-making and predictive accuracy.",
       "dir": "left",
-      link: "/mlsolutions"
+      link: "/machinelearning"
     },
     {
       "icon": MdSecurity,
@@ -30,7 +30,7 @@ const services = [
     {
       "icon": FiDatabase,
       "title": "Database Management",
-      "disc": "We create and manage scalable databases, ensuring your data is accessible, secure, and well-organized.",
+      "disc": "We create and manage scalable databases, ensuring your data is accessible, secure, scalable and is well-organized.",
       "dir": "left",
       link: "/databasemanagement",
     },
