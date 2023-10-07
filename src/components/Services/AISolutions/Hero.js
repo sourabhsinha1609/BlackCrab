@@ -9,13 +9,15 @@ import {
 } from "./HeroStyles";
 
 import { Slide } from "react-awesome-reveal";
+import Navbar from "../Navbar/Navbar"
 
 const Hero = () => {
   return (
     <HeroSection>
+    <Navbar />
       <Container>
         <Slide direction="left" delay={1}>
-          <MainHeading>AI Solutions</MainHeading>
+          <MainHeading >AI Solutions</MainHeading>
         </Slide>
         <HeroText>
           The journey from machine learning to deep learning encapsulates a

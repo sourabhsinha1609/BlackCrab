@@ -16,7 +16,7 @@ const services = [
     {
       "icon": BsWrenchAdjustable,
       "title": "Machine Learning",
-      "disc": " Seamlessly transform raw data into valuable insights, enabling informed decision-making and predictive accuracy.",
+      "disc": " Seamlessly transform raw data into valuable insights, enabling informed decision-making, predictive accuracy with proper structure.",
       "dir": "left",
       link: "/machinelearning"
     },
@@ -37,7 +37,7 @@ const services = [
     {
       "icon": MdPrecisionManufacturing,
       "title": "Product Manufacturing",
-      "disc": "Our technology products are born from passion and expertise, designed to revolutionize how you interact with tech.",
+      "disc": "Our technology products are born from passion, designed to revolutionize how you interact with tech.",
       "dir": "right",
       link: "/productmanufacturing",
     },
@@ -58,7 +58,7 @@ const services = [
     {
       "icon": GiArchiveResearch,
       "title": "Research and Development",
-      "disc": "We're pioneers in tech research, driving innovation through exploration and experimentation with proper structure.",
+      "disc": "We're pioneers in tech research, driving innovation through exploration.",
       "dir": "right",
       link: "/researchanddevelopment",
     }

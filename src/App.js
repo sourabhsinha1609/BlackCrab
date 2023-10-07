@@ -11,12 +11,12 @@ import TrainingAndWorkshops from "./pages/Services/TrainingAndWorkshops";
 import MachineLearning from "./pages/Services/MachineLearning";
 
 import Home from "./pages/Home";
-import Header from "../src/components/Banner/Header";
 import Footer from "./components/Footer/Footer";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -103,21 +103,27 @@ function App() {
           detectRetina: true,
         }}
       />
-      <Header />
+      
       <Router>
-        <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/cybersecurity" Component={Cybersecurity} />
-          <Route path="/aisolutions" Component={AISolutions} />
-          <Route path="/cloudservices" Component={CloudServices} />
-          <Route path="/databasemanagement" Component={DatabaseManagement} />
-          <Route path="/productmanufacturing" Component={ProductManufacturing} />
-          <Route path="/researchanddevelopment" Component={RND} />
-          <Route path="/trainingandworkshops" Component={TrainingAndWorkshops} />
-          <Route path="/machinelearning" Component={MachineLearning} />
-
-
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" Component={Home} />
+            <Route path="/cybersecurity" Component={Cybersecurity} />
+            <Route path="/aisolutions" Component={AISolutions} />
+            <Route path="/cloudservices" Component={CloudServices} />
+            <Route path="/databasemanagement" Component={DatabaseManagement} />
+            <Route
+              path="/productmanufacturing"
+              Component={ProductManufacturing}
+            />
+            <Route path="/researchanddevelopment" Component={RND} />
+            <Route
+              path="/trainingandworkshops"
+              Component={TrainingAndWorkshops}
+            />
+            <Route path="/machinelearning" Component={MachineLearning} />
+          </Routes>
+        </ScrollToTop>
       </Router>
       <LightColor>
         <Footer />

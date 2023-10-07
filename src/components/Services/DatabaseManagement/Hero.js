@@ -7,12 +7,14 @@ import {
   Container,
   MainHeading,
 } from "./HeroStyles";
+import Navbar from "../Navbar/Navbar";
 
 import { Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
     <HeroSection>
+    <Navbar />
       <Container>
         <Slide direction="left" delay={1}>
           <MainHeading>Database Management</MainHeading>
